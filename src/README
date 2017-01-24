@@ -1,0 +1,38 @@
+This is the 2016 FALL CSE421 Pintos Project 2 made by Team SOS.
+
+Team member:
+Dixin Chen		dixinche@buffalo.edu
+Fengyu Wu		fengyuwu@buffalo.edu
+Junjie Chen		jchen232@buffalo.edu
+
+Note:
+
+1, To initialize tests, please go to "src/userprog/" then "make check", please be advised, we have changed the Make.vars so that the 
+   default simulator is bochs.
+
+2, We have modified line 19 of src/Make.config as "CC = gcc -m32 -march=i386 -std=gnu99", so hopefully Zulkar will not have problem compiling our code.
+   
+3, Modified or new files
+
+	src/threads/
+	thread.h
+	thread.c
+	synch.h
+	synch.c
+
+	src/filesys/
+	fsutils.c
+
+	src/userprog/
+	exception.c
+	process.h
+	process.c
+	syscall.h
+	syscall.c
+	Make.vars
+	DESIGNDOC
+
+4, 75/76 tests passed by using "make check" on timberlake server.
+   The only test failed is "tests/userprog/no-vm/multipl-oom.c"
+   This is a tricky one, for some test run it can pass with a very long runtime,
+   but often times it just fails very quickly.
